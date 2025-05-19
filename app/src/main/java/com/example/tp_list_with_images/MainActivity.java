@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             map.put("name", city.name);
             map.put("description", city.description);
-            map.put("imageSrc", city.imageSrc); // Assuming imageSrc is an int (R.drawable.xxx)
+            map.put("imageSrc", city.imageSrc);
             data.add(map);
         }
 
