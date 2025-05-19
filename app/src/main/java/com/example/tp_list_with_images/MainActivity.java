@@ -38,12 +38,7 @@ public class MainActivity extends AppCompatActivity {
         List<Map<String, Object>> data = new ArrayList<>();
 
         for (City city : citys) {
-            Map<String, Object> map = new HashMap<>();
-
-            map.put("name", city.name);
-            map.put("description", city.description);
-            map.put("imageSrc", city.imageSrc);
-            data.add(map);
+            data.add(city.toMap());
         }
 
         String[] from = {"name", "description", "imageSrc"};
